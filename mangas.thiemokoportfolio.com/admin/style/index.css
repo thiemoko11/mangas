@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .boutnn {
+    display :flex;
+    display: flex-end;
+
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #6c757d;
+  }
+  /*conteneur pour tout les éléments du slider*/
+  
+  .conteneur-carrousel {
+    width: 900px;
+    height: 400px;
+    margin: 100px auto 0;
+    position: relative;
+  }
+  /*conteneur pour toutes les images*/
+  .conteneur-images {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .conteneur-images img {
+    width: 50rem;
+    /*Pour que les images s'adaptent à la taille du conteneur*/
+    height: auto;
+    /* Pour que les images s'empilent*/
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  /* conteneur des boutons */
+  .commandes {
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .commandes button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /* transformer en cercle*/
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .commandes img {
+    width: 15px;
+    position: relative;
+  }
+  /* pour placer le bouton à gauche */
+  .commandes button:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+  }
+  /* pour placer le bouton à droite */
+  .commandes button:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+  }
+  /* pour décaler l'image à l'intérieur des boutons */
+  .commandes button:nth-child(1) img {
+    left: -1px;
+  }
+  .commandes button:nth-child(2) img {
+    right: -1px;
+  }
+  
+  .cercles {
+    position: absolute;
+    /* pour faire dépasser les cercles en bas du carrousel */
+    top: 105%;
+    left: 50%;
+    /* centrer les cercles sur l'axe x */
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cercle {
+    width: 20px;
+    height: 20%;
+    border-radius: 50%;
+    /* Mettre un espace entre les cercles */
+    margin: 5px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #333;
+  }
+  
+  /* couleur du cercle actif */
+  .actif-cercle {
+    background: rgb(58, 36, 156);
+  }
+  /* pour faire apparaître le bouton actif */
+  .actif {
+    opacity: 1 !important;
+  }
+  
+  .grille{
+    max-width: 2000px;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 500px);
+    grid-gap: 20px;
+    justify-content: center;
+    
+}
+
+.grid-item{
+    width: 500px;
+    height: 400px;
+    background: #b48c8c;
+}
+table{
+  border-spacing: 0;
+  margin: 0 auto;
+  width: 50%;
+  font-family: 'lato', sans-serif;
+}
+td, th{
+  border: solid 1px rgb(28, 17, 17);
+  padding: 10px;
+  text-align: center;
+
+}
+th{
+  background-color: #183746;
+  color: #2b9f6b;
+  line-height: 1.4em;
+  text-transform: uppercase;
+}
+
+caption{
+  font-size: 2em;
+  letter-spacing: 12px;
+  
+}
+
+.liste-items{
+  background-color:#728c96ee;
+  color: #171616;
+}

@@ -1,0 +1,62 @@
+/* Style pour le champ fieldset */
+fieldset.cadre {
+    border: 2px solid #251e82;  /* Bordure de couleur bleue */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    margin: 20px 0;
+}
+
+fieldset.foto {
+    border: none;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+#boite-membre {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#boite-membre div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+span {
+    color: #555;
+    font-size: 14px;
+}
+
+#pseudonyme, #membre-courriel, #membre-prenom, #membre-nom {
+    margin-bottom: 15px;
+}
+
+#boite-membre span {
+    font-size: 16px;
+}
+
+img {
+    max-width: 150px;
+    border-radius: 50%;
+    border: 2px solid #251e82;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for labels */
+label:hover {
+    color: #251e82;
+    cursor: pointer;
+}
+
